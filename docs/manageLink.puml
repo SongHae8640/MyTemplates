@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+
+actor Admin
+
+package "Manage Link"{
+    usecase "링크 등록" as CreateLink
+    usecase "링크 수정" as UpdateLink
+    usecase "링크 삭제" as DeleteLink
+}
+
+package "Manage Ad"{
+    usecase "광고 등록" as CreateAd
+    usecase "광고 수정" as UpdateAd
+    usecase "광고 삭제" as DeleteAd
+}
+
+Admin --> CreateLink
+Admin --> UpdateLink
+Admin --> DeleteLink
+Admin --> CreateAd
+Admin --> UpdateAd
+Admin --> DeleteAd
+
+@enduml
