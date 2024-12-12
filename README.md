@@ -11,7 +11,7 @@ root/
 ├── ApiDesign
 └── java-spring-jpa-security
 ```
-
+<br><br>
 
 ## 서브트리 모듈 목록
 현재 프로젝트에 포함된 서브트리 모듈들입니다:
@@ -20,9 +20,10 @@ root/
 - **저장소**: `https://github.com/SongHae8640/ApiDesign.git`
 - **설명**: API 설계를 위한 유스케이스 작성, REST API 설계
 
-### Module B
+### java-spring-jpa-security
 - **저장소**: `https://github.com/SongHae8640/java-spring-jpa-security.git`
 - **설명**: Spring Security를 이용한 기본적인 회원가입, 인증/인가, 게시글 관리, 공통 예외처리 초기 구조 세팅
+<br><br><br><br>
 
 
 ## 새로운 서브트리 추가하기
@@ -36,8 +37,7 @@ git subtree add --prefix=[로컬_경로] [원격_저장소_URL] [브랜치]
 # 예시
 git subtree add --prefix=module-d https://github.com/username/module-d.git main
 ```
-
-
+<br><br>
 
 ## 서브트리 업데이트
 
@@ -52,6 +52,7 @@ git push
 git subtree pull --prefix=module-a https://github.com/username/module-a.git main
 git push
 ```
+<br><br>
 
 ## 전체 서브트리 업데이트
 
