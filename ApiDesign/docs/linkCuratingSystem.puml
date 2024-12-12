@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+
+actor User
+actor Admin
+actor Advertiser
+component Website
+
+package "Link Curating System"{
+    usecase "링크 조회" as GetLink
+    usecase "링크 이동" as MoveLink
+    usecase "링크 검색" as SearchLink
+    usecase "광고 조회" as GetAd
+
+    usecase "링크 관리" as ManageLink
+    usecase "광고 관리" as ManageAd
+
+    usecase "광고 등록 요청" as RequestAd
+}
+
+User --> GetLink
+User --> MoveLink
+User --> SearchLink
+User --> GetAd
+Admin --> ManageLink
+Admin --> ManageAd
+Advertiser --> RequestAd
+
+MoveLink ..> Website
+ManageLink ..> GetLink : <<include>>
+ManageLink ..> SearchLink : <<include>>
+ManageAd ..> GetAd : <<include>>
+
+@enduml
