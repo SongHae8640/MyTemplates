@@ -52,3 +52,15 @@ git push
 git subtree pull --prefix=module-a https://github.com/username/module-a.git main
 git push
 ```
+
+## 전체 서브트리 업데이트
+
+모든 서브트리를 한 번에 업데이트하려면 제공된 스크립트를 사용합니다:
+
+```bash
+# 스크립트 실행 권한 부여
+chmod +x scripts/update-all-subtrees.sh
+
+# 스크립트 실행
+./scripts/update-all-subtrees.sh
+```
